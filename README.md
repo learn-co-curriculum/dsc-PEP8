@@ -127,6 +127,11 @@ As a general rule of thumb, limit all lines of code to 79 characters.
      1. In some fonts, these characters are indistinguishable from the numerals one and zero. When tempted to use 'l', use 'L' instead.  
 2. Don't use built in python keywords like list, dict or str as variable names: this is not only a style guideline, it will break your code! 
 
+## Additional Resources
+
+* [PEP Website](https://www.python.org/dev/peps/)
+* [PEP8 Page](https://www.python.org/dev/peps/pep-0008/)
+
 ## Summary
 
 In this lesson, we introduced you to Python Enhancement Proposolas (PEPs), documents for the python community meant to describe new features or processes. Specifically, we discussed some of the contents of PEP8, the style guide for python. Follow these guidelines will lead to more readable code that can be shared with collaborators. With that, let's leave you with a poem of sorts: PEP20!
