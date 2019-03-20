@@ -14,16 +14,16 @@ You will be able to:
 
 ## PEP8 Introductory Notes
 
-Remember that the guidelines in PEP8 are just that: guidelines. There main goal is to make code more readable. Often, projects may have their own style guidelines which should take precedence. Most important of all is consistency. Be consistent with how you format your code and stick to it. With that, here's an overview of some of the most important guidelines from the PEP8 document to start familiarizing yourself with.
+Remember that the guidelines in PEP8 are just that: guidelines. The main goal is to make code more readable. Often, projects may have their own style guidelines which should take precedence. Most important of all is consistency. Be consistent with how you format your code and stick to it. With that, here's an overview of some of the most important guidelines from the PEP8 document to start familiarizing yourself with.
 
 ## Indentation
 
-1. When identing, use 4 spaces instead of a tab.
+1. When indenting, use 4 spaces instead of a tab.
     1. Note that Python 3 disallows mixing the use of tabs and spaces for indentation. At some point you'll encounter this error: be on the lookout!
-2. Vertically allign continuation lines of code.
+2. Vertically align continuation lines of code.
     1. This gets used for long functions, lists or conditionals
 
-Here's some examples!
+Here are some examples!
 
 ### Good Indentation:
 
@@ -125,7 +125,7 @@ As a general rule of thumb, limit all lines of code to 79 characters.
 
 1. Never use the characters 'l' (lowercase letter el), 'O' (uppercase letter oh), or 'I' (uppercase letter eye) as single character variable names.
      1. In some fonts, these characters are indistinguishable from the numerals one and zero. When tempted to use 'l', use 'L' instead.  
-2. Don't use built in python keywords like list, dict or str as variable names: this is not only a style guideline, it will break your code! 
+2. Don't use built-in python keywords like list, dict or str as variable names: this is not only a style guideline, it will break your code! 
 
 ## Additional Resources
 
@@ -134,7 +134,8 @@ As a general rule of thumb, limit all lines of code to 79 characters.
 
 ## Summary
 
-In this lesson, we introduced you to Python Enhancement Proposolas (PEPs), documents for the python community meant to describe new features or processes. Specifically, we discussed some of the contents of PEP8, the style guide for python. Follow these guidelines will lead to more readable code that can be shared with collaborators. With that, let's leave you with a poem of sorts: PEP20!
+In this lesson, we introduced you to Python Enhancement Proposals (PEPs),
+ documents for the python community meant to describe new features or processes. Specifically, we discussed some of the contents of PEP8, the style guide for python. Follow these guidelines will lead to more readable code that can be shared with collaborators. With that, let's leave you with a poem of sorts: PEP20!
 
 PEP 20 -- The Zen of Python
 
