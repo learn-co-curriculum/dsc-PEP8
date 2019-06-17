@@ -84,7 +84,7 @@ income = (gross_wages +
 ## Whitespace
 
 1. Avoid trailing whitespace; its hard to see!
-2. Always use whitespace one either side of binary operators like =, ==, !=, >, <, <=, not, in, and, or...
+2. Always use whitespace on either side of binary operators like =, ==, !=, >, <, <=, not, in, and, or...
 3. If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). For example, multiplication takes precedence over addition, so we might not include whitespace around the multiplication, helping to indicate that these operations happen first and form a cohesive group.
 
 ### Good whitespace usage:
