@@ -16,6 +16,52 @@ You will be able to:
 
 Remember that the guidelines in PEP8 are just that: guidelines. The main goal is to make code more readable. Often, projects may have their own style guidelines which should take precedence. Most important of all is consistency. Be consistent with how you format your code and stick to it. With that, here's an overview of some of the most important guidelines from the PEP8 document to start familiarizing yourself with.
 
+## Whitespace
+
+1. Avoid trailing whitespace; its hard to see!
+2. Always use whitespace on either side of binary operators like =, ==, !=, >, <, <=, not, in, and, or...
+3. If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). For example, multiplication takes precedence over addition, so we might not include whitespace around the multiplication, helping to indicate that these operations happen first and form a cohesive group.
+
+### Good whitespace usage:
+
+
+```python
+i = 1
+i = i + 1
+i += 1
+x = i*2 - 1
+hypot2 = x*x + i*i
+c = (x+x) * (i-i)
+```
+
+### Bad whitespace usage:
+
+
+```python
+i=1
+i=i+1
+i +=1
+x = i * 2 - 1
+hypot2 = x * x + i * i
+c = (x + x) * (i - i)
+```
+
+## Line Length
+
+As a general rule of thumb, limit all lines of code to 79 characters.
+
+
+```python
+#Below is a verbose list comprehension that is 79 characters long as a silly example
+[integer**2+1 for integer in range(1,100) if integer > 20 and integer % 5 == 0]
+```
+
+## Variable Names
+
+1. Never use the characters 'l' (lowercase letter el), 'O' (uppercase letter oh), or 'I' (uppercase letter eye) as single character variable names.
+     1. In some fonts, these characters are indistinguishable from the numerals one and zero. When tempted to use 'l', use 'L' instead.  
+2. Don't use built-in python keywords like list, dict or str as variable names: this is not only a style guideline, it will break your code! 
+
 ## Indentation
 
 The importance of indentation in python was introduced in the conditionals lesson. Here are the conventional style guidelines that should be followed:
@@ -25,7 +71,7 @@ The importance of indentation in python was introduced in the conditionals lesso
 2. Vertically align continuation lines of code.
     1. This gets used for long functions, lists or conditionals
 
-Here are some examples using functions. Functions will be introduced formally in the future so don't worry if the syntax looks unfamiliar. Comments have been placed in the code to help guide understanding.
+Here are some examples using functions. Functions will be introduced formally in the future so don't worry if the syntax looks unfamiliar. Just keep in mind that there are style conventions associated with functions. Comments have been placed in the code to help guide understanding.
 
 ### Good Indentation:
 
@@ -82,52 +128,6 @@ income = (gross_wages +
           ira_deduction -
           student_loan_interest)
 ```
-
-## Whitespace
-
-1. Avoid trailing whitespace; its hard to see!
-2. Always use whitespace on either side of binary operators like =, ==, !=, >, <, <=, not, in, and, or...
-3. If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). For example, multiplication takes precedence over addition, so we might not include whitespace around the multiplication, helping to indicate that these operations happen first and form a cohesive group.
-
-### Good whitespace usage:
-
-
-```python
-i = 1
-i = i + 1
-i += 1
-x = i*2 - 1
-hypot2 = x*x + i*i
-c = (x+x) * (i-i)
-```
-
-### Bad whitespace usage:
-
-
-```python
-i=1
-i=i+1
-i +=1
-x = i * 2 - 1
-hypot2 = x * x + i * i
-c = (x + x) * (i - i)
-```
-
-## Line Length
-
-As a general rule of thumb, limit all lines of code to 79 characters.
-
-
-```python
-#Below is a verbose list comprehension that is 79 characters long as a silly example
-[integer**2+1 for integer in range(1,100) if integer > 20 and integer % 5 == 0]
-```
-
-## Variable Names
-
-1. Never use the characters 'l' (lowercase letter el), 'O' (uppercase letter oh), or 'I' (uppercase letter eye) as single character variable names.
-     1. In some fonts, these characters are indistinguishable from the numerals one and zero. When tempted to use 'l', use 'L' instead.  
-2. Don't use built-in python keywords like list, dict or str as variable names: this is not only a style guideline, it will break your code! 
 
 ## Additional Resources
 
