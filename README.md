@@ -18,12 +18,14 @@ Remember that the guidelines in PEP8 are just that: guidelines. The main goal is
 
 ## Indentation
 
+The importance of indentation in python was introduced in the conditionals lesson. Here are the conventional style guidelines that should be followed:
+
 1. When indenting, use 4 spaces instead of a tab.
     1. Note that Python 3 disallows mixing the use of tabs and spaces for indentation. At some point you'll encounter this error: be on the lookout!
 2. Vertically align continuation lines of code.
     1. This gets used for long functions, lists or conditionals
 
-Here are some examples!
+Here are some examples using functions. Functions will be introduced formally in the future so don't worry if the syntax looks unfamiliar. Comments have been placed in the code to help guide understanding.
 
 ### Good Indentation:
 
