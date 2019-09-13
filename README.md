@@ -137,7 +137,7 @@ income = (gross_wages +
 ## Summary
 
 In this lesson, we introduced you to Python Enhancement Proposals (PEPs),
- documents for the python community meant to describe new features or processes. Specifically, we discussed some of the contents of PEP8, the style guide for python. Follow these guidelines will lead to more readable code that can be shared with collaborators. With that, let's leave you with a poem of sorts: PEP20!
+ documents for the python community meant to describe new features or processes. Specifically, we discussed some of the contents of PEP8, the style guide for python. Following these guidelines will lead to more readable code that can be shared with collaborators. With that, let's leave you with a poem of sorts: PEP20!
 
 PEP 20 -- The Zen of Python
 
