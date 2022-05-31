@@ -1,4 +1,4 @@
-# PEP8
+# PEP8 and PEP257
 
 ## Introduction
 
@@ -127,33 +127,84 @@ income = (gross_wages +
           student_loan_interest)
 ```
 
+### PEP 257 - Docstring Conventions
+
+There are also recommendations for how to format your docstrings. But first, what is a docstring? A docstring is a string literal (AKA fixed value) that occurs as the first statement in a module, function, or method definition. Recall that a function should ideally only perform one action. A docstring of a function should tell you simply what it does and some description of the arguments it takes and the output You can see an example below:
+
+#### One-line Docstring
+
+
+```python
+# Example of a one-line docstring for a function. a one-line description
+# is sufficient for a relatively simple function.
+
+def add_one(number):
+    """
+    add_one() takes an integer, float and returns that value 
+    added by one.
+    """
+    number_plus_one = number + 1
+    return number_plus_one
+        
+```
+
+#### Multi-line Docstring
+
+
+```python
+# Example of a multi-line docstring. If your function has some complexity
+# a more descriptive docstring is recommended that includes descriptions
+# of the function arguments and outputs like so.
+
+def add_two(number):
+    """
+    add_two() takes an integer, float and returns that value 
+    added by one.
+    
+    Arguments: number - a single integer or float.
+    
+    Returns:   number_plus_two - the sum of the given integer or float and 
+               two.
+    """
+    number_plus_one = number + 1
+    return number_plus_one
+        
+```
+
+You have accessed the docstrings of functions before by using the `help()`
+command. This is the process how those are written! lets take a look at the ways we can access docstrings of functions.
+
+**Remember that when calling the help command and you want the docstring of the function, to pass the `help()` function the name of your function,  without the parentheses!**
+
+
+```python
+# 1.) By using the help() command.
+help(add_one)
+help(add_two)
+```
+
+### Why is this important?
+
+In Data Analytics and the Data Science fields... You will likely be performing repeat tasks, usually in cleaning and formatting data for analysis. Although not all analysts use Python, it is an incredibly powerful and versatile tool when undertaking any analysis. Its also a highly-demanded skill!
+
+It is typical for professionals in these fields to write functions they will use often in a python file. This file would have a `.py` extension and you would be able to use functions written in it just like you use those in the libraries you have used thus far. Those libraries are just `.py` files! This is how any library is written. You may share this file with collaborators or make it open-source (available to the public on a platform like github). In any case, when sharing code READABILITY and CLARITY are gold. thats why it is good to hold to the PEP 8 and PEP 257 conventions.
+
 ## Additional Resources
 
 * [PEP Website](https://www.python.org/dev/peps/)
 * [PEP8 Page](https://www.python.org/dev/peps/pep-0008/)
+* [PEP257 Page](https://www.python.org/dev/peps/pep-0257/)
+* [Numpy Style Guide for Docstrings](https://numpydoc.readthedocs.io/en/latest/format.html)
+
+The above is a good resource on specifics about docstrings for functions that are concerned with computation.
 
 ## Summary
 
-In this lesson, we introduced you to Python Enhancement Proposals (PEPs), documents for the Python community meant to describe new features or processes. Specifically, we discussed some of the contents of PEP8, the style guide for Python. Following these guidelines will lead to more readable code that can be shared with collaborators. With that, let's leave you with a poem of sorts: PEP20!
+Today we introduced you to Python Enhancement Proposals (PEPs), documents for the Python community meant to describe new features or processes. Specifically, we discussed some of the contents of PEP8, the style guide for Python. Following these guidelines will lead to more readable code that can be shared with collaborators. With that, let's leave you with a poem of sorts: PEP20!
 
-PEP 20 -- The Zen of Python
+PEP 20 -- The Zen of Python: 
 
-Beautiful is better than ugly.  
-Explicit is better than implicit.  
-Simple is better than complex.  
-Complex is better than complicated.  
-Flat is better than nested.  
-Sparse is better than dense.  
-Readability counts.  
-Special cases aren't special enough to break the rules.  
-Although practicality beats purity.  
-Errors should never pass silently.  
-Unless explicitly silenced.  
-In the face of ambiguity, refuse the temptation to guess.  
-There should be one-- and preferably only one --obvious way to do it.  
-Although that way may not be obvious at first unless you're Dutch.  
-Now is better than never.  
-Although never is often better than *right* now.  
-If the implementation is hard to explain, it's a bad idea.  
-If the implementation is easy to explain, it may be a good idea.  
-Namespaces are one honking great idea -- let's do more of those!  
+
+```python
+import this
+```
