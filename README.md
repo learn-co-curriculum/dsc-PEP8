@@ -1,4 +1,4 @@
-# PEP8 and PEP257
+# PEP8
 
 ## Introduction
 
